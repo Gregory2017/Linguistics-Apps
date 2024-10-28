@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NMT English Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .option {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  
+   
+
+  <h1>NMT English Test</h1>
+  <section>
+    <h2>Section 1: Vocabulary (8 questions)</h2>
+    <div id="timer-panel">
+  <button id="start-button">Start</button>
+  <div id="timer">Time left: 01:00:00</div>
+</div>
+    <div class="question">
+      <p>1. What does the word "perspicacious" mean?</p>
+      <button class="option" onclick="checkAnswer(1, 'B')">A) Having a strong and unpleasant smell</button>
+      <button class="option" onclick="checkAnswer(1, 'B')">B) Having a keen understanding and insight</button>
+      <button class="option" onclick="checkAnswer(1, 'B')">C) Having a lot of money</button>
+      <button class="option" onclick="checkAnswer(1, 'B')">D) Having a big house</button>
+    </div>
+    <div class="question">
+      <p>2. What is the meaning of the word "enervate"?</p>
+      <button class="option" onclick="checkAnswer(2, 'B')">A) To give energy and strength</button>
+      <button class="option" onclick="checkAnswer(2, 'B')">B) To take away energy and strength</button>
+      <button class="option" onclick="checkAnswer(2, 'B')">C) To make something more interesting</button>
+      <button class="option" onclick="checkAnswer(2, 'B')">D) To make something more boring</button>
+    </div>
+    <div class="question">
+      <p>3. What does the word "fastidious" mean?</p>
+      <button class="option" onclick="checkAnswer(3, 'B')">A) Careless and sloppy</button>
+      <button class="option" onclick="checkAnswer(3, 'B')">B) Meticulous and demanding in one's standards</button>
+      <button class="option" onclick="checkAnswer(3, 'B')">C) Quick and efficient</button>
+      <button class="option" onclick="checkAnswer(3, 'B')">D) Slow and lazy</button>
+    </div>
+    <div class="question">
+      <p>4. What is the meaning of the word "heterogeneous"?</p>
+      <button class="option" onclick="checkAnswer(4, 'A')">A) Composed of different kinds of things</button>
+      <button class="option" onclick="checkAnswer(4, 'A')">B) Composed of the same kind of things</button>
+      <button class="option" onclick="checkAnswer(4, 'A')">C) Having a strong and unpleasant smell</button>
+      <button class="option" onclick="checkAnswer(4, 'A')">D) Having a big house</button>
+    </div>
+    <div class="question">
+      <p>5. What does the word "insouciant" mean?</p>
+      <button class="option" onclick="checkAnswer(5, 'A')">A) Carefree and nonchalant</button>
+      <button class="option" onclick="checkAnswer(5, 'A')">B) Worried and anxious</button>
+      <button class="option" onclick="checkAnswer(5, 'A')">C) Angry and aggressive</button>
+      <button class="option" onclick="checkAnswer(5, 'A')">D) Sad and depressed</button>
+    </div>
+    <div class="question">
+      <p>6. What is the meaning of the word "meritorious"?</p>
+      <button class="option" onclick="checkAnswer(6, 'A')">A) Deserving praise and reward</button>
+      <button class="option" onclick="checkAnswer(6, 'A')">B) Deserving blame and punishment</button>
+      <button class="option" onclick="checkAnswer(6, 'A')">C) Having a lot of money</button>
+      <button class="option" onclick="checkAnswer(6, 'A')">D) Having a big house</button>
+    </div>
+    <div class="question">
+      <p>7. What does the word "narcissistic" mean?</p>
+      <button class="option" onclick="checkAnswer(7, 'A')">A) Excessively self-loving and self-admiring</button>
+      <button class="option" onclick="checkAnswer(7, 'A')">B) Lacking self-confidence and self-esteem</button>
+      <button class="option" onclick="checkAnswer(7, 'A')">C) Having a lot of friends</button>
+      <button class="option" onclick="checkAnswer(7, 'A')">D) Having a big house</button>
+    </div>
+    <div class="question">
+      <p>8. What is the meaning of the word "obfuscate"?</p>
+      <button class="option" onclick="checkAnswer(8, 'A')">A) To make something clear and easy to understand</button>
+      <button class="option" onclick="checkAnswer(8, 'A')">B) To make something unclear and difficult to understand</button>
+      <button class="option" onclick="checkAnswer(8, 'A')">C) To make something more interesting</button>
+      <button class="option" onclick="checkAnswer(8, 'A')">D) To make something more boring</button>
+    </div>
+  </section>
+  <section>
+    <h2>Section 2: Grammar (8 questions)</h2>
+    <div class="question">
+      <p>9. Which of the following sentences is grammatically correct?</p>
+      <button class="option" onclick="checkAnswer(9, 'B')">A) Me and my friend go to the store.</button>
+      <button class="option" onclick="checkAnswer(9, 'B')">B) My friend and I go to the store.</button>
+      <button class="option" onclick="checkAnswer(9, 'B')">C) My friend and me go to the store.</button>
+      <button class="option" onclick="checkAnswer(9, 'B')">D) I and my friend go to the store.</button>
+    </div>
+    <div class="question">
+      <p>10. Which of the following sentences is grammatically correct?</p>
+      <button class="option" onclick="checkAnswer(10, 'A')">A) The dog chased it's tail.</button>
+      <button class="option" onclick="checkAnswer(10, 'A')">B) The dog chased its tail.</button>
+      <button class="option" onclick="checkAnswer(10, 'A')">C) The dog chased it tail.</button>
+      <button class="option" onclick="checkAnswer(10, 'A')">D) The dog chased its' tail.</button>
+    </div>
+    <div class="question">
+      <p>11. Which of the following sentences is grammatically correct?</p>
+      <button class="option" onclick="checkAnswer(11, 'B')">A) I seen the movie last night.</button>
+      <button class="option" onclick="checkAnswer(11, 'B')">B) I saw the movie last night.</button>
+      <button class="option" onclick="checkAnswer(11, 'B')">C) I have seen the movie last night.</button>
+      <button class="option" onclick="checkAnswer(11, 'B')">D) I has seen the movie last night.</button>
+    </div>
+    <div class="question">
+      <p>12. Which of the following sentences is grammatically correct?</p>
+      <button class="option" onclick="checkAnswer(12, 'A')">A) The teacher give us a lot of homework.</button>
+      <button class="option" onclick="checkAnswer(12, 'A')">B) The teacher gives us a lot of homework.</button>
+      <button class="option" onclick="checkAnswer(12, 'A')">C) The teacher giving us a lot of homework.</button>
+      <button class="option" onclick="checkAnswer(12, 'A')">D) The teacher gives us a lots of homework.</button>
+    </div>
+    <div class="question">
+      <p>13. Which of the following sentences is grammatically correct?</p>
+      <button class="option" onclick="checkAnswer(13, 'C')">A) The cat chased it's tail.</button>
+      <button class="option" onclick="checkAnswer(13, 'C')">B) The cat chased its' tail.</button>
+      <button class="option" onclick="checkAnswer(13, 'C')">C) The cat chased its tail.</button>
+      <button class="option" onclick="checkAnswer(13, 'C')">D) The cat chases it's tail.</button>
+    </div>
+    <div class="question">
+      <p>14. Which of the following sentences is grammatically correct?</p>
+      <button class="option" onclick="checkAnswer(14, 'B')">A) The student do their homework every night.</button>
+      <button class="option" onclick="checkAnswer(14, 'B')">B) The students do their homework every night.</button>
+      <button class="option" onclick="checkAnswer(14, 'B')">C) The student does their homework every night.</button>
+      <button class="option" onclick="checkAnswer(14, 'B')">D) The students does their homework every night.</button>
+    </div>
+    <div class="question">
+      <p>15. Which of the following sentences is grammatically correct?</p>
+      <button class="option" onclick="checkAnswer(15, 'A')">A) The book, which is on the table, is mine.</button>
+      <button class="option" onclick="checkAnswer(15, 'A')">B) The book, that is on the table, is mine.</button>
+      <button class="option" onclick="checkAnswer(15, 'A')">C) The book which is on the table is mine.</button>
+      <button class="option" onclick="checkAnswer(15, 'A')">D) The book that is on the table is mine.</button>
+    </div>
+    <div class="question">
+      <p>16. Which of the following sentences is grammatically correct?</p>
+      <button class="option" onclick="checkAnswer(16, 'B')">A) If I was you, I would not do that.</button>
+      <button class="option" onclick="checkAnswer(16, 'B')">B) If I were you, I would not do that.</button>
+      <button class="option" onclick="checkAnswer(16, 'B')">C) If I am you, I would not do that.</button>
+      <button class="option" onclick="checkAnswer(16, 'B')">D) If I be you, I would not do that.</button>
+    </div>
+  </section>
+  <section>
+    <h2>Section 3: Reading Comprehension (8 questions)</h2>
+    <div class="question">
+      <p>17. Read the following passage and answer the question:</p>
+      <p>The sun was shining brightly in the clear blue sky. The birds were singing their sweet melodies. It was a beautiful day.</p>
+      <p>What is the main idea of the passage?</p>
+      <button class="option" onclick="checkAnswer(17, 'A')">A) The sun is shining brightly.</button>
+      <button class="option" onclick="checkAnswer(17, 'A')">B) The birds are singing sweet melodies.</button>
+      <button class="option" onclick="checkAnswer(17, 'A')">C) It is a beautiful day.</button>
+      <button class="option" onclick="checkAnswer(17, 'A')">D) The sky is clear blue.</button>
+    </div>
+    <div class="question">
+      <p>18. Read the following passage and answer the question:</p>
+      <p>The new employee was very nervous on his first day of work. He was worried that he would make mistakes and not fit in with the team.</p>
+      <p>What is the main idea of the passage?</p>
+      <button class="option" onclick="checkAnswer(18, 'A')">A) The employee is nervous on his first day of work.</button>
+      <button class="option" onclick="checkAnswer(18, 'A')">B) The employee is worried about making mistakes.</button>
+      <button class="option" onclick="checkAnswer(18, 'A')">C) The employee is not fitting in with the team.</button>
+      <button class="option" onclick="checkAnswer(18, 'A')">D) The employee is having a bad day.</button>
+    </div>
+    <div class="question">
+      <p>19. Read the following passage and answer the question:</p>
+      <p>The company has been experiencing financial difficulties for the past year. The management has been trying to find ways to reduce costs and increase revenue.</p>
+      <p>What is the main problem facing the company?</p>
+      <button class="option" onclick="checkAnswer(19, 'A')">A) Financial difficulties</button>
+      <button class="option" onclick="checkAnswer(19, 'A')">B) Management issues</button>
+      <button class="option" onclick="checkAnswer(19, 'A')">C) Cost reduction</button>
+      <button class="option" onclick="checkAnswer(19, 'A')">D) Revenue increase</button>
+    </div>
+    <div class="question">
+      <p>20. Read the following passage and answer the question:</p>
+      <p>The new policy has been implemented to improve customer satisfaction. The company has received positive feedback from customers since its implementation.</p>
+      <p>What is the main purpose of the new policy?</p>
+      <button class="option" onclick="checkAnswer(20, 'A')">A) To improve customer satisfaction</button>
+      <button class="option" onclick="checkAnswer(20, 'A')">B) To receive positive feedback</button>
+      <button class="option" onclick="checkAnswer(20, 'A')">C) To implement a new policy</button>
+      <button class="option" onclick="checkAnswer(20, 'A')">D) To increase revenue</button>
+    </div>
+    <div class="question">
+      <p>21. Read the following passage and answer the question:</p>
+      <p>The new employee was very impressed with the company culture. He felt that the company values its employees and provides a positive work environment.</p>
+      <p>What is the main idea of the passage?</p>
+      <button class="option" onclick="checkAnswer(21, 'A')">A) The company has a positive work environment</button>
+      <button class="option" onclick="checkAnswer(21, 'A')">B) The company values its employees</button>
+      <button class="option" onclick="checkAnswer(21, 'A')">C) The new employee is impressed</button>
+      <button class="option" onclick="checkAnswer(21, 'A')">D) The company has a good culture</button>
+    </div>
+    <div class="question">
+      <p>22. Read the following passage and answer the question:</p>
+      <p>The company has been experiencing a high turnover rate. The management is trying to find ways to reduce employee turnover and improve job satisfaction.</p>
+      <p>What is the main problem facing the company?</p>
+      <button class="option" onclick="checkAnswer(22, 'A')">A) High turnover rate</button>
+      <button class="option" onclick="checkAnswer(22, 'A')">B) Low job satisfaction</button>
+      <button class="option" onclick="checkAnswer(22, 'A')">C) Management issues</button>
+      <button class="option" onclick="checkAnswer(22, 'A')">D) Employee retention</button>
+    </div>
+    <div class="question">
+      <p>23. Read the following passage and answer the question:</p>
+      <p>The new product has been a huge success. The company has received positive reviews and feedback from customers.</p>
+      <p>What is the main idea of the passage?</p>
+      <button class="option" onclick="checkAnswer(23, 'A')">A) The new product is a success</button>
+      <button class="option" onclick="checkAnswer(23, 'A')">B) The company has received positive reviews</button>
+      <button class="option" onclick="checkAnswer(23, 'A')">C) The customers are happy</button>
+      <button class="option" onclick="checkAnswer(23, 'A')">D) The product is popular</button>
+    </div>
+    <div class="question">
+      <p>24. Read the following passage and answer the question:</p>
+      <p>The company is planning to expand its operations to new markets. The management is conducting market research to identify potential opportunities.</p>
+      <p>What is the main goal of the company?</p>
+      <button class="option" onclick="checkAnswer(24, 'A')">A) To conduct market research</button>
+      <button class="option" onclick="checkAnswer(24, 'A')">B) To identify potential opportunities</button>
+      <button class="option" onclick="checkAnswer(24, 'A')">C) To expand operations to new markets</button>
+      <button class="option" onclick="checkAnswer(24, 'A')">D) To increase revenue</button>
+    </div>
+    <div class="question">
+      <p>25. Read the following passage and answer the question:</p>
+      <p>The company has implemented a new training program for its employees. The program is designed to improve employee skills and knowledge.</p>
+      <p>What is the main purpose of the training program?</p>
+      <button class="option" onclick="checkAnswer(25, 'A')">A) To improve employee skills and knowledge</button>
+      <button class="option" onclick="checkAnswer(25, 'A')">B) To increase employee productivity</button>
+      <button class="option" onclick="checkAnswer(25, 'A')">C) To reduce employee turnover</button>
+      <button class="option" onclick="checkAnswer(25, 'A')">D) To improve customer satisfaction</button>
+    </div>
+    <div class="question">
+      <p>26. Read the following passage and answer the question:</p>
+      <p>The company has launched a new marketing campaign to promote its products. The campaign includes social media advertising and email marketing.</p>
+      <p>What is the main goal of the marketing campaign?</p>
+      <button class="option" onclick="checkAnswer(26, 'A')">A) To promote products</button>
+      <button class="option" onclick="checkAnswer(26, 'A')">B) To increase brand awareness</button>
+      <button class="option" onclick="checkAnswer(26, 'A')">C) To drive website traffic</button>
+      <button class="option" onclick="checkAnswer(26, 'A')">D) To generate leads</button>
+    </div>
+    <div class="question">
+      <p>27. Read the following passage and answer the question:</p>
+      <p>The company has implemented a new customer service system to improve customer satisfaction. The system includes a live chat feature and a ticketing system.</p>
+      <p>What is the main purpose of the customer service system?</p>
+      <button class="option" onclick="checkAnswer(27, 'A')">A) To improve customer satisfaction</button>
+      <button class="option" onclick="checkAnswer(27, 'A')">B) To reduce customer complaints</button>
+      <button class="option" onclick="checkAnswer(27, 'A')">C) To increase customer loyalty</button>
+      <button class="option" onclick="checkAnswer(27, 'A')">D) To provide 24/7 support</button>
+    </div>
+    <div class="question">
+      <p>28. Read the following passage and answer the question:</p>
+      <p>The company has launched a new product line to cater to the growing demand for sustainable products. The product line includes eco-friendly packaging and sustainable materials.</p>
+      <p>What is the main reason for launching the new product line?</p>
+      <button class="option" onclick="checkAnswer(28, 'A')">A) To cater to the growing demand for sustainable products</button>
+      <button class="option" onclick="checkAnswer(28, 'A')">B) To increase revenue</button>
+      <button class="option" onclick="checkAnswer(28, 'A')">C) To improve brand image</button>
+      <button class="option" onclick="checkAnswer(28, 'A')">D) To reduce costs</button>
+    </div>
+    <div class="question">
+      <p>29. Read the following passage and answer the question:</p>
+      <p>The company has implemented a new employee recognition program to boost employee morale and motivation. The program includes rewards and recognition for outstanding performance.</p>
+      <p>What is the main purpose of the employee recognition program?</p>
+      <button class="option" onclick="checkAnswer(29, 'A')">A) To boost employee morale and motivation</button>
+      <button class="option" onclick="checkAnswer(29, 'A')">B) To improve employee productivity</button>
+      <button class="option" onclick="checkAnswer(29, 'A')">C) To reduce employee turnover</button>
+      <button class="option" onclick="checkAnswer(29, 'A')">D) To improve customer satisfaction</button>
+    </div>
+    <div class="question">
+      <p>30. Read the following passage and answer the question:</p>
+      <p>The company has launched a new website to improve its online presence. The website includes features such as e-commerce functionality and a blog.</p>
+      <p>What is the main purpose of the new website?</p>
+      <button class="option" onclick="checkAnswer(30, 'A')">A) To improve online presence</button>
+      <button class="option" onclick="checkAnswer(30, 'A')">B) To increase website traffic</button>
+      <button class="option" onclick="checkAnswer(30, 'A')">C) To generate leads</button>
+      <button class="option" onclick="checkAnswer(30, 'A')">D) To improve customer engagement</button>
+    </div>
+    <div class="question">
+      <p>31. Read the following passage and answer the question:</p>
+      <p>The company has implemented a new supply chain management system to improve efficiency and reduce costs. The system includes features such as inventory management and logistics tracking.</p>
+      <p>What is the main purpose of the supply chain management system?</p>
+      <button class="option" onclick="checkAnswer(31, 'A')">A) To improve efficiency and reduce costs</button>
+      <button class="option" onclick="checkAnswer(31, 'A')">B) To improve customer satisfaction</button>
+      <button class="option" onclick="checkAnswer(31, 'A')">C) To increase revenue</button>
+      <button class="option" onclick="checkAnswer(31, 'A')">D) To improve product quality</button>
+    </div>
+    <div class="question">
+      <p>32. Read the following passage and answer the question:</p>
+      <p>The company has launched a new social media campaign to increase brand awareness and engagement. The campaign includes features such as influencer partnerships and user-generated content.</p>
+      <p>What is the main purpose of the social media campaign?</p>
+      <button class="option" onclick="checkAnswer(32, 'A')">A) To increase brand awareness and engagement</button>
+      <button class="option" onclick="checkAnswer(32, 'A')">B) To drive website traffic</button>
+      <button class="option" onclick="checkAnswer(32, 'A')">C) To generate leads</button>
+      <button class="option" onclick="checkAnswer(32, 'A')">D) To improve customer satisfaction</button>
+    </div>
+  </section>
+</main>
+
+<script>
+ // Initialize score to 0
+let score = 0;
+
+// Define the correct answers
+let correctAnswers = [
+  'B', 'B', 'B', 'A', 'A', 'A', 'A', 'A',
+  'B', 'B', 'B', 'B', 'C', 'B', 'A', 'B',
+  'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A',
+  'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A'
+];
+
+// Define the user's answers
+let userAnswers = new Array(32).fill('');
+
+// Function to check the answer and update the score
+function checkAnswer(questionNumber, userAnswer) {
+  userAnswers[questionNumber - 1] = userAnswer; // Store the user's answer
+  if (userAnswer === correctAnswers[questionNumber - 1]) {
+    score++;
+  }
+  
+  // Log the chosen answer without indicating correctness
+  console.log(`Question ${questionNumber}: You chose ${userAnswer}.`);
+  
+  // Log all chosen answers so far
+  console.log('Your answers so far:', userAnswers);
+  
+  // Check if the user has finished answering all questions
+  checkIfFinished();
+}
+
+// Function to display the results
+function displayResults() {
+  console.log(`Your final score is ${score}/${correctAnswers.length}`);
+  console.log('Correct answers:');
+  for (let i = 0; i < correctAnswers.length; i++) {
+    console.log(`Question ${i + 1}: ${correctAnswers[i]}`);
+  }
+  console.log('Your answers:');
+  for (let i = 0; i < userAnswers.length; i++) {
+    console.log(`Question ${i + 1}: ${userAnswers[i]}`);
+  }
+}
+
+// Check if the user has finished answering all questions
+function checkIfFinished() {
+  if (!userAnswers.includes('')) {
+    displayResults();
+  }
+}
+</script>
+<script>
+let timeLeft = 3600; // 1 hour in seconds
+let timerInterval;
+
+document.getElementById('start-button').addEventListener('click', function() {
+  this.disabled = true;
+  startTimer();
+});
+
+function startTimer() {
+  timerInterval = setInterval(updateTimer, 1000);
+}
+
+function updateTimer() {
+  let hours = Math.floor(timeLeft / 3600);
+  let minutes = Math.floor((timeLeft % 3600) / 60);
+  let seconds = timeLeft % 60;
+  document.getElementById('timer').innerHTML = `Time left: ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+  timeLeft--;
+  if (timeLeft <= 0) {
+    clearInterval(timerInterval);
+    document.getElementById('timer').innerHTML = 'Time is up!';
+  }
+}
+</script>
+</body>
+</html>
